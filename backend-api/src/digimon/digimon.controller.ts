@@ -27,7 +27,7 @@ export class DigimonController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.digimonService.findOne(+id);
+    return this.digimonService.findOne(id);
   }
 
   @Patch(':id')
