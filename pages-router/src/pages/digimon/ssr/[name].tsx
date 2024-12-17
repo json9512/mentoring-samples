@@ -3,7 +3,7 @@ import { GetServerSidePropsContext } from "next";
 
 export default function DigimonDetail({ digimon }: { digimon: Digimon }) {
   return (
-    <div className="flex flex-col items-center w-screen h-screen p-4 space-y-4 bg-slate-100">
+    <div className="flex flex-col items-center min-w-screen min-h-screen w-full h-full p-4 space-y-4 bg-slate-100">
       <div className="m-auto">
         <DigimonCard key={digimon.name} digimon={digimon} showLevel />
       </div>
